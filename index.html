@@ -1,0 +1,579 @@
+google-site-verification: google9a66a66ada7399a9.html
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ 加乘激能：電流優化接地迴路解決方案</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* 設定中文字體為系統優選黑體，確保 Inter 字體作為預設 */
+        html {
+            font-family: 'Inter', 'Noto Sans TC', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        /* 自定義 Tailwind 配置 */
+        /* 新配色方案：電力綠/螢光黃 (High Voltage/Performance) - 提高對比度 */
+        .bg-tech-dark {
+            /* 調整為較亮的深灰色，提高易讀性 */
+            background-color: #1A1A22; 
+        }
+        .text-accent {
+            color: #39FF14; /* 電力綠/霓虹綠 - Primary Accent */
+        }
+        .border-accent {
+            border-color: #39FF14;
+        }
+        .bg-accent-light {
+            background-color: #39FF14; /* 電力綠 */
+        }
+        .bg-commitment-dark {
+            /* 承諾區塊背景，深紫色 */
+            background-color: #3A0A4A; 
+        }
+        .bg-card-dark {
+            /* 調整為深藍灰色 */
+            background-color: #242435; 
+        }
+        .bg-table-header {
+            background-color: #2F2F45; /* 表格頭部深藍灰，略亮 */
+        }
+        .bg-filter-red {
+            background-color: #331A00; /* 過濾區的深棕色 */
+        }
+        .border-filter-red {
+            border-color: #FFD700; /* 亮金色/警示黃 */
+        }
+        .text-filter-red {
+            color: #FFD700; /* 亮金色/警示黃文字 */
+        }
+        /* 改善所有主要文字的對比度 */
+        .text-white { color: #FFFFFF; }
+        .text-gray-300 { color: #CCCCCC; }
+        .text-gray-400 { color: #A0A0A0; }
+        
+        /* CTA Button 樣式，將其應用於連結上 */
+        .cta-button {
+            transition: transform 0.2s, box-shadow 0.2s;
+            /* 調整按鈕陰影顏色為強調色 (電力綠) */
+            box-shadow: 0 4px 15px rgba(57, 255, 20, 0.4); 
+            display: inline-flex; 
+            align-items: center;
+            justify-content: center;
+            padding: 1.25rem 3rem; /* px-12 py-5 */
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 800; /* font-extrabold */
+            color: #1A1A22; /* 文字顏色使用新的深色主背景色 */
+            background-color: #FFD700; /* 亮金色 */
+            border-radius: 9999px; /* rounded-full */
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(57, 255, 20, 0.6);
+            background-color: #FACC15; /* hover:bg-yellow-300 */
+        }
+        
+        /* 針對案例研究的圖片網格調整 */
+        @media (max-width: 768px) {
+            .case-study-grid {
+                grid-template-columns: 1fr;
+            }
+            .product-comparison-grid {
+                grid-template-columns: 1fr;
+            }
+            .commitment-grid {
+                grid-template-columns: 1fr;
+            }
+            /* 在手機上讓 CTA 區塊全寬 */
+            .commitment-grid .md\:self-start {
+                align-self: auto;
+                width: 100%;
+            }
+        }
+
+        /* 隱藏 LINE 外掛的預設樣式, 我們使用 CTA Button 容器樣式 */
+        .line-it-button {
+            display: none !important; /* 確保不顯示預設外掛 */
+        }
+
+        /* 恢復：直式文字樣式 (用於表格) */
+        .vertical-text {
+            /* 垂直書寫：由上到下，由右到左 */
+            writing-mode: vertical-rl;
+            /* 確保字元（特別是英數）直立 */
+            text-orientation: upright; 
+            /* 調整字母間距讓文字看起來更舒服 */
+            letter-spacing: 0.1em;
+        }
+    </style>
+</head>
+<body class="bg-tech-dark min-h-screen">
+
+    <div class="container mx-auto px-4 py-8 md:py-12 max-w-5xl">
+
+        <header class="text-center mb-16 pt-8">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-white mb-4 tracking-tight">
+                ⚡ <a href="https://jcjn.app/" class="text-white hover:text-accent">加乘激能</a>：電流優化接地迴路解決方案
+            </h1>
+            <p class="text-xl sm:text-2xl font-light text-gray-300">
+                您是否忽略了，「隱藏的電子疲勞」正在偷走您愛車的動力與荷包？
+            </p>
+        </header>
+
+        <main class="space-y-16">
+
+            <section class="bg-card-dark p-8 rounded-xl shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+                    <div>
+                        <h2 class="text-3xl font-bold text-white mb-6 border-b border-accent pb-3">您的愛車出現這些「耗損訊號」了嗎？</h2>
+                        <div class="space-y-4 text-gray-300 text-lg">
+                            <div class="flex items-start">
+                                <i data-lucide="zap-off" class="w-6 h-6 text-red-400 flex-shrink-0 mr-3 mt-1"></i>
+                                <p><strong class="text-white">油門遲滯、反應遲緩</strong>，甚至出現輕微抖動。</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-lucide="monitor-off" class="w-6 h-6 text-red-400 flex-shrink-0 mr-3 mt-1"></i>
+                                <p><strong class="text-white">電子系統不穩定</strong>：燈光變暗、音響效果下降，懷疑愛車在跟您鬧脾氣。</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-lucide="wallet-2" class="w-6 h-6 text-red-400 flex-shrink-0 mr-3 mt-1"></i>
+                                <p><strong class="text-white">油耗偷偷上升</strong>，讓您的荷包在哭泣。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-white mb-6 border-b border-accent pb-3">解決方案：車輛整流輔助線「<a href="https://jcjn.app/" class="text-accent hover:text-white">加乘激能</a>」</h2>
+                        <div class="space-y-4 text-gray-300 text-lg">
+                            <div class="flex items-start">
+                                <i data-lucide="shield-check" class="w-6 h-6 text-accent flex-shrink-0 mr-3 mt-1"></i>
+                                <p><strong class="text-white">內建電流處理模塊：</strong> 淨化電力雜訊，確保點火和電子訊號準確運作。</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-lucide="sparkles" class="w-6 h-6 text-accent flex-shrink-0 mr-3 mt-1"></i>
+                                <p><strong class="text-white">高規格線材與工藝：：</strong> 嚴苛標準，提供最持久穩定的連接。</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-lucide="trending-down" class="w-6 h-6 text-accent flex-shrink-0 mr-3 mt-1"></i>
+                                <p><strong class="text-white">節能環保與長期回饋：：</strong> 省油效益落在 <span class="font-bold">5%</span> 到 <span class="font-bold">25%</span> 之間，延長元件壽命。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="text-white">
+                <h2 class="text-3xl font-bold mb-6 text-center">二、產品對比：從「搭鐵」升級到「電流精修」</h2>
+                <h3 class="text-xl font-semibold mb-6 text-center text-accent">💡 我們的價值：不只是粗線徑，我們更追求電流的「純淨度」</h3>
+
+                <div class="grid md:grid-cols-5 gap-6 product-comparison-grid">
+                    
+                    <div class="md:col-span-3 overflow-x-auto rounded-xl shadow-2xl">
+                        <table class="min-w-full divide-y divide-gray-700 bg-card-dark">
+                            <thead class="bg-table-header">
+                                <tr>
+                                    <th scope="col" class="px-6 py-4 text-center text-sm font-bold text-white tracking-wider rounded-tl-xl">特性</th>
+                                    <th scope="col" class="px-6 py-4 text-center text-sm font-bold text-white tracking-wider">傳統便宜接地線 (粗線徑)</th>
+                                    <th scope="col" class="px-6 py-4 text-center text-sm font-bold text-white tracking-wider rounded-tr-none"><a href="https://jcjn.app/" class="text-white hover:text-accent">加乘激能</a>整流輔助線 (電流精修)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-700">
+                                <tr class="hover:bg-gray-700 transition-colors">
+                                    <td class="px-6 py-4 font-medium text-accent vertical-text w-12 text-center">技術原理</td>
+                                    <td class="px-6 py-4 text-gray-300">僅是物理性地降低電阻 (被動式改善)</td>
+                                    <td class="px-6 py-4 font-semibold text-gray-300">內建電流處理模塊，主動淨化電流雜訊 (技術差異)</td>
+                                </tr>
+                                <tr class="hover:bg-gray-700 transition-colors">
+                                    <td class="px-6 py-4 font-medium text-accent vertical-text w-12 text-center">核心目標</td>
+                                    <td class="px-6 py-4 text-gray-300">追求電流迴路的大小</td>
+                                    <td class="px-6 py-4 font-semibold text-gray-300">追求電流訊號的純淨度與穩定度</td>
+                                
+                                <tr class="hover:bg-gray-700 transition-colors">
+                                    <td class="px-6 py-4 font-medium text-accent vertical-text w-12 text-center">效果體現</td>
+                                    <td class="px-6 py-4 text-gray-300">加速感可能提升，但電子系統穩定度有限</td>
+                                    <td class="px-6 py-4 font-semibold text-accent">加速輕快、點火精準、電子設備穩定</td>
+                                </tr>
+                                <tr class="hover:bg-gray-700 transition-colors">
+                                    <td class="px-6 py-4 font-medium text-accent vertical-text w-12 text-center rounded-bl-xl">價格定位</td>
+                                    <td class="px-6 py-4 text-gray-300">市場最低價，單純線材批發價</td>
+                                    <td class="px-6 py-4 font-semibold text-gray-300 rounded-br-none">價格反映核心技術、工藝與長期效益</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="md:col-span-2 flex justify-center items-stretch rounded-xl overflow-hidden shadow-2xl">
+                        <img 
+                            src="Bonus function.png" 
+                            onerror="this.onerror=null; this.src='https://placehold.co/400x500/1A1A22/39FF14?text=加乘激能優勢圖'"
+                            alt="加乘激能產品優勢與功能列表圖" 
+                            class="w-full h-full object-cover rounded-xl"
+                        >
+                    </div>
+
+                </div>
+            </section><section class="text-white bg-filter-red p-8 rounded-xl shadow-2xl border-l-4 border-filter-red">
+                <h2 class="text-3xl font-bold mb-6 text-center">三、判斷：是否適合我？</h2>
+                <h3 class="text-2xl font-semibold mb-6 text-center text-filter-red">🚫 誠實預警：本產品可能「不適合」以下情況</h3>
+                <p class="text-lg text-gray-300 text-center mb-8">購買前請三思。如果您屬於以下情況，請勿購買，以免浪費您的時間與金錢：</p>
+
+                <div class="grid sm:grid-cols-3 gap-6 text-center">
+                    <div class="bg-card-dark p-6 rounded-lg border-2 border-filter-red/50">
+                        <i data-lucide="check-circle" class="w-8 h-8 text-filter-red mx-auto mb-3"></i>
+                        <p class="text-xl font-bold text-white mb-2">車況完美到像剛出廠：</p>
+                        <p class="text-xl font-extrabold text-filter-red">車況好不用買<br>車況要報廢的不要買</p>
+                    </div>
+                    <div class="bg-card-dark p-6 rounded-lg border-2 border-filter-red/50">
+                        <i data-lucide="help-circle" class="w-8 h-8 text-filter-red mx-auto mb-3"></i>
+                        <p class="text-xl font-bold text-white mb-2">抱持強烈懷疑態度者：</p>
+                        <p class="text-xl font-extrabold text-filter-red leading-tight">不相信的不要買<br>陰謀論的不要買</p>
+                    </div>
+                    <div class="bg-card-dark p-6 rounded-lg border-2 border-filter-red/50">
+                        <i data-lucide="dollar-sign" class="w-8 h-8 text-filter-red mx-auto mb-3"></i>
+                        <p class="text-xl font-bold text-white mb-2">單純尋找市場最低價：</p>
+                        <p class="text-xl font-extrabold text-filter-red leading-tight">心情不爽不要買<br>類奧州來的不要買<br>一年兩桶油的不要買</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center bg-gray-700 p-4 rounded-lg">
+                    <p class="text-lg text-gray-300">
+                        <strong class="text-white">【預期管理】</strong> 我們必須強調：請勿指望安裝產品能讓您的國民車變成超跑！ <a href="https://jcjn.app/" class="text-white hover:text-accent">加乘激能</a>的作用是優化，讓您的愛車找回失去的效率。
+                    </p>
+                </div>
+            </section>
+
+            <section class="text-white">
+                <h2 class="text-3xl font-bold mb-8 text-center">四、經驗分享</h2>
+
+                <div class="bg-card-dark p-8 rounded-xl shadow-2xl mb-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-accent">📈 親測：讓經典老車脫胎換骨的數據</h3>
+                    <p class="text-lg text-gray-300 mb-6">根據大量車主反饋，安裝<a href="https://jcjn.app/" class="text-accent hover:text-white">加乘激能</a>後，油耗改善幅度通常介於 
+                        <span class="text-4xl font-extrabold text-accent">5%</span> 到 
+                        <span class="text-4xl font-extrabold text-accent">25%</span> 之間。效果取決於原車況和駕駛習慣及環境因素。
+                    </p>
+                    
+                    <div class="bg-gray-900 p-6 rounded-lg border-l-4 border-yellow-500 space-y-4 grid md:grid-cols-5 gap-6 case-study-grid">
+                        
+                        <div class="md:col-span-3">
+                            <p class="font-bold text-xl text-yellow-400 mb-2">【經典老車案例展示】</p>
+                            <div class="text-gray-300 mb-4">
+                                <i data-lucide="car" class="w-5 h-5 inline text-accent mr-2"></i>
+                                <strong class="text-white">車型參考：TOYOTA Premio 1.6 (28年老車)</strong>
+                                <p class="mt-1 ml-7 text-sm italic">此類車款通常因負極線組老化，安裝後在<strong>起步輕快度</strong>與<strong>電路穩定性</strong>上會有特別明顯的提升，是高價值車主群體。</p>
+                            </div>
+                            <ul class="list-disc list-inside space-y-1 text-gray-300 ml-4">
+                                <li><strong class="text-white">極端測試車輛：</strong> 28 年老車 (1997年)，里程超過 45 萬公里。</li>
+                                <li><strong class="text-white">安裝前油耗：</strong> 8.9 km/L (95汽油)</li>
+                                <li><strong class="text-white">安裝後油耗：：</strong> 從 8.9 km/L 有感提升至 <span class="text-2xl font-extrabold text-yellow-300">13.2 km/L</span>！</li>
+                                <li><strong class="text-white">油耗改善幅度：：</strong> <span class="text-2xl font-extrabold text-yellow-300">近 50%</span> 提升</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="md:col-span-2 flex justify-center items-center">
+                            <img 
+                                src="excitation.jpg" 
+                                onerror="this.onerror=null; this.src='https://placehold.co/400x300/1A1A22/FFD700?text=實際安裝圖 (引擎室)'"
+                                alt="加乘激能接地線在老車引擎室的實際安裝照片" 
+                                class="w-full h-auto object-cover rounded-lg shadow-xl"
+                            >
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12">
+                        <h4 class="text-2xl font-bold text-accent mb-6 text-center border-b border-gray-700 pb-3">🛠 TOYOTA Premio 強化接地線安裝實拍三步驟</h4>
+                        
+                        <div class="grid md:grid-cols-2 gap-8 items-center mb-10 p-6 bg-gray-800/50 rounded-xl">
+                            <div class="md:order-1">
+                                <p class="text-2xl font-extrabold text-yellow-300 mb-2">STEP 1. 固定接地線於電瓶負極</p>
+                                <p class="text-lg text-gray-300">將兩條強化接地線匯集在同一端，並牢固地連接至<strong class="text-yellow-300">電瓶的負極螺絲</strong>處。確保接點清潔、緊密，以提供最佳的導電效果，這是電源迴路的起點。</p>
+                            </div>
+                            <div class="md:order-2">
+                                <img src="Install1.jpg" 
+                                    onerror="this.onerror=null; this.src='https://placehold.co/500x300/242435/FFD700?text=STEP+1+電瓶負極';"
+                                    alt="安裝實拍圖1：固定接地線於電瓶負極" 
+                                    class="w-full h-auto object-cover rounded-lg shadow-xl border-4 border-gray-700">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8 items-center mb-10 p-6 bg-gray-800/50 rounded-xl">
+                            <div class="md:order-2">
+                                <p class="text-2xl font-extrabold text-yellow-300 mb-2">STEP 2. 分別固定於引擎兩端的金屬螺絲</p>
+                                <p class="text-lg text-gray-300">將強化接地線的另一端，分別緊固於<strong class="text-yellow-300">引擎兩側</strong>的合適金屬螺絲上。選擇堅固且能良好導電的引擎本體螺絲，以提升引擎點火和感應器的穩定性。</p>
+                            </div>
+                            <div class="md:order-1">
+                                <img src="Install2.jpg" 
+                                    onerror="this.onerror=null; this.src='https://placehold.co/500x300/242435/FFD700?text=STEP+2+引擎搭鐵點';"
+                                    alt="安裝實拍圖2：分別固定接地線於引擎兩端的金屬螺絲" 
+                                    class="w-full h-auto object-cover rounded-lg shadow-xl border-4 border-gray-700">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8 items-center p-6 bg-gray-800/50 rounded-xl">
+                            <div class="md:order-1">
+                                <p class="text-2xl font-extrabold text-yellow-300 mb-2">STEP 3. 完成線路佈局與固定</p>
+                                <p class="text-lg text-gray-300">最後將強化接地線整理並固定好。務必再次檢查線路是否牢固，確保線材不會隨意晃動或接觸到高溫部件(雖然線材有耐高溫、耐腐蝕)，避免潛在的安全隱患。</p>
+                            </div>
+                            <div class="md:order-2">
+                                <img src="Install3.jpg" 
+                                    onerror="this.onerror=null; this.src='https://placehold.co/500x300/242435/FFD700?text=STEP+3+線路總覽';"
+                                    alt="安裝實拍圖3：完成線路佈局與固定" 
+                                    class="w-full h-auto object-cover rounded-lg shadow-xl border-4 border-gray-700">
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+            </section>
+
+            <section class="text-white bg-card-dark p-8 rounded-xl shadow-2xl">
+                <h2 class="text-3xl font-bold mb-6 text-center border-b border-accent pb-3">五、產品價格與配置建議</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    
+                    <div class="p-4 bg-gray-700/50 rounded-lg flex flex-col justify-center items-center">
+                        <p class="text-xl font-semibold text-accent mb-2">🛠 產品細節與標準</p>
+                        
+                        <img 
+                            src="Bonus function2.png" 
+                            onerror="this.onerror=null; this.src='https://placehold.co/400x300/1A1A22/39FF14?text=產品實拍圖'" 
+                            alt="加乘激能產品實拍圖" 
+                            class="w-full h-auto object-cover rounded-md shadow-lg mb-4"
+                        >
+
+                        <div class="text-center">
+                            <p class="text-lg text-gray-300">
+                                <strong class="text-white">線材執行標準：</strong> 
+                                <strong class="text-white">GT/T 10666-2019</strong>、<strong class="text-white">JB/T 8734.2-2016</strong>
+                            </p>
+                            <p class="text-sm text-gray-400 mt-1">
+                                符合國家標準規範，品質有保障，使用更安心。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="p-4 bg-gray-700/50 rounded-lg">
+                            <p class="text-xl font-semibold text-accent mb-3">📏 產品規格與車型配置建議</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4 text-lg">
+                                <a href="https://jcjn.app/" class="text-white hover:text-accent">加乘激能</a>車輛整流線有 <strong class="text-white">100cm (長線)</strong> 及 <strong class="text-white">50cm (短線)</strong> 兩種規格。
+                                <li><strong class="text-white">一般房車：</strong> 建議使用 2 條長線或 1 長 1 短線 (視電瓶負極至引擎兩端點螺絲位置而定)。</li>
+                                <li><strong class="text-white">機車：</strong> 可使用 1 條長線或 1 條短線安裝。</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="p-4 bg-gray-700/50 rounded-lg border-l-4 border-red-400">
+                            <p class="text-xl font-semibold text-red-400 mb-3">⚠️ 重要注意事項（安裝提醒）</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4 text-lg">
+                                <li><strong class="text-white">只接電瓶負極</strong>、引擎搭鐵或車身搭鐵，<strong class="text-yellow-300">不可接正電極</strong>。</li>
+                                <li>安裝前需檢查電瓶負極與引擎的搭鐵狀態。</li>
+                                <li>確認負極與電瓶測量搭鐵是否正常運作。</li>
+                                <li>定期檢查接點是否鬆動或氧化，保持最佳接觸狀態。</li>
+                                <li>如有疑問，建議尋求專業技師協助安裝。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-800 p-6 rounded-xl border-4 border-yellow-500 shadow-xl">
+                        <div class="text-center">
+                            <i data-lucide="battery-charging" class="w-10 h-10 text-yellow-400 mx-auto mb-4"></i>
+                            <h3 class="text-2xl font-extrabold text-white mb-3">100 cm 長線 </h3>
+                            <div class="bg-yellow-500 text-gray-900 p-3 rounded-lg">
+                                <p class="text-sm font-semibold">建議售價</p>
+                                <p class="text-4xl font-extrabold">NT$ 2,580 元</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-xl border-4 border-accent shadow-xl">
+                        <div class="text-center">
+                            <i data-lucide="bolt" class="w-10 h-10 text-accent mx-auto mb-4"></i>
+                            <h3 class="text-2xl font-extrabold text-white mb-3">50 cm 短線 </h3>
+                            <div class="bg-accent text-gray-900 p-3 rounded-lg">
+                                <p class="text-sm font-semibold">建議售價</p>
+                            <p class="text-4xl font-extrabold">NT$ 1,280 元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8 p-6 bg-gray-700/50 rounded-lg border border-accent">
+                    <p class="text-xl font-extrabold text-accent mb-2">💡 每月節油效益估算</p>
+                    <p class="text-lg text-gray-300">以每週加油 <strong class="text-white">NT$1000 元</strong>，保守估計節油 <strong class="text-white">30%</strong> 計算：</p>
+                    <p class="text-5xl font-extrabold text-yellow-300 my-4">每月可節省約 NT$1,200 元!</p>
+                    <p class="text-sm text-gray-400 italic mt-4">
+                        *此為依據車主測試數據與假設油價、保守節油率計算，實際效益因人、車、駕駛習慣而異。
+                    </p>
+                </div>
+            </section>
+
+            <section class="text-white">
+                <h2 class="text-3xl font-bold mb-8 text-center">六、最終承諾與洽詢</h2>
+
+                <div class="bg-commitment-dark p-8 rounded-xl shadow-2xl">
+                    <div class="grid md:grid-cols-5 gap-6 commitment-grid">
+                        
+                        <div class="md:col-span-3 text-center md:text-left flex flex-col justify-center">
+                            <h3 class="text-3xl font-extrabold mb-4 text-white">🔒 綠色駕駛承諾：【7 天有感體驗，無條件退款】</h3>
+                            <p class="text-xl text-gray-300 mb-6">
+                                在安裝使用七天內（或行駛超過 500 km），若您無法感受<strong>「動力順暢感」、「電子穩定度」</strong>，或<strong>「油耗改善趨勢」</strong>，請通知我們，<strong class="text-yellow-300">我們將全額退款，不問原因！</strong>
+                            </p>
+                            <p class="text-xl font-semibold text-white italic mb-8">我們把風險扛下。您唯一需要做的，就是享受試用帶來的改善。</p>
+
+                            <a href="https://line.me/ti/p/visZ1_wb2r" 
+                               target="_blank" 
+                               class="cta-button w-full md:w-auto md:self-start">
+                                <span class="mr-2">→ 立即洽詢，加入省錢又環保的車主行列！LINE：0989172373</span>
+                            </a>
+                            
+                            <a href="https://famistore.famiport.com.tw/famistore/users/5708275/malls/6919fae96a79e841aaedc954" 
+                                target="_blank" 
+                                class="mt-4 inline-flex items-center justify-center 
+                                       px-12 py-5 text-2xl font-extrabold 
+                                       rounded-full bg-blue-600 text-white 
+                                       shadow-lg shadow-blue-600/50 
+                                       hover:bg-blue-700 transition-all duration-300 
+                                       transform hover:translate-y-[-2px] 
+                                       w-full md:w-auto md:self-start">
+                                <i data-lucide="shopping-cart" class="w-8 h-8 mr-3"></i>
+                                立即結帳 → 前往全家超商【好賣+】下單 (享運費優惠)
+                            </a>
+
+                        </div>
+                        
+                        <div class="md:col-span-2 flex justify-center items-center">
+                            <img 
+                                src="model.png" 
+                                onerror="this.onerror=null; this.src='https://placehold.co/300x400/3A0A4A/FFD700?text=產品承諾形象圖'"
+                                alt="加乘激能產品與服務人員形象圖" 
+                                class="w-full h-auto object-cover rounded-xl shadow-2xl"
+                            >
+                        </div>
+
+                    </div>
+                </div></section>
+
+            <section class="pt-8 text-white">
+                <h2 class="text-3xl font-bold mb-8 text-center border-b border-gray-700 pb-4">七、常見問題 Q&A (FAQ)</h2>
+                
+                <div id="faq-accordion" class="space-y-4">
+                    <div class="bg-card-dark rounded-lg shadow-md overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 text-left font-bold text-lg hover:bg-gray-700 transition duration-300 focus:outline-none faq-toggle">
+                            <span>Q1：你們的產品與傳統的「粗線徑」接地線有何不同？</span>
+                            <i data-lucide="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content p-6 pt-0 text-gray-300 hidden">
+                            <p class="border-t border-gray-700 pt-4">傳統的粗線徑只是被動地降低電阻 (物理性改善)。我們的核心價值在於內建的電流優化處理模塊，主動淨化電流雜訊，追求電流訊號的「純淨度」。</p>
+                        </div>
+                    </div>
+                    <div class="bg-card-dark rounded-lg shadow-md overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 text-left font-bold text-lg hover:bg-gray-700 transition duration-300 focus:outline-none faq-toggle">
+                            <span>Q2：這「電流優化處理模塊」的原理是什麼？</span>
+                            <i data-lucide="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content p-6 pt-0 text-gray-300 hidden">
+                            <p class="border-t border-gray-700 pt-4">這是我們的獨家技術，其作用是主動地處理電力雜訊，利用專業技術來穩定並純化傳輸中的電流，確保其穩定性和長效性。</p>
+                        </div>
+                    </div>
+                    <div class="bg-card-dark rounded-lg shadow-md overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 text-left font-bold text-lg hover:bg-gray-700 transition duration-300 focus:outline-none faq-toggle">
+                            <span>Q3：我的車是新車，性能很好，需要安裝嗎？</span>
+                            <i data-lucide="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content p-6 pt-0 text-gray-300 hidden">
+                            <p class="border-t border-gray-700 pt-4">如果您是新車，且電子系統運作完美，您可能暫時不需要本產品。我們的產品價值在於解決車輛電子系統隨著時間產生的耗損與延遲。</p>
+                        </div>
+                    </div>
+                    <div class="bg-card-dark rounded-lg shadow-md overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 text-left font-bold text-lg hover:bg-gray-700 transition duration-300 focus:outline-none faq-toggle">
+                            <span>Q4：我的車輛有改裝其他電子產品，還能安裝嗎？</span>
+                            <i data-lucide="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content p-6 pt-0 text-gray-300 hidden">
+                            <p class="border-t border-gray-700 pt-4">可以，<a href="https://jcjn.app/" class="text-white hover:text-accent">加乘激能</a>的原理是淨化電力基底，可以為所有電子設備提供更穩定、更純淨的電壓，反而能最大限度發揮您其他改裝品的性能。</p>
+                        </div>
+                    </div>
+                    <div class="bg-card-dark rounded-lg shadow-md overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 text-left font-bold text-lg hover:bg-gray-700 transition duration-300 focus:outline-none faq-toggle">
+                            <span>Q5：除了油耗，這產品如何幫我「省錢」？</span>
+                            <i data-lucide="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content p-6 pt-0 text-gray-300 hidden">
+                            <p class="border-t border-gray-700 pt-4">長期省錢體現在：1. <strong>節省油(電)費</strong>；2. <strong>減少電子元件的更換頻率</strong> (穩定電壓能延長電瓶、燈泡、感應器的壽命)；3. <strong>減少因電力雜訊引起的間歇性維修</strong>。</p>
+                        </div>
+                    </div>
+                    <div class="bg-card-dark rounded-lg shadow-md overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 text-left font-bold text-lg hover:bg-gray-700 transition duration-300 focus:outline-none faq-toggle">
+                            <span class="text-accent">Q6：你們說能改善油耗，這聽起來有點誇張，萬一無效怎麼辦？</span>
+                            <i data-lucide="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content p-6 pt-0 text-gray-300 hidden">
+                            <p class="border-t border-gray-700 pt-4">我們不保證每位車主都能達到極端數據，但我們依消保法提供「<strong class="text-yellow-300">7 天有感體驗，無條件退款</strong>」承諾。我們相信眼見為實，由您親自驗證。<br>安裝前請先記錄油耗數據，7天內行駛超過500公里後再去加滿油，對比安裝前後油耗。(這不是唯一效果，僅是最淺顯易見的數據顯示。實則車主行駛改善感覺只有自己最知道)<br/></p>
+                        </div>
+                    </div>
+                     <div class="bg-card-dark rounded-lg shadow-md overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 text-left font-bold text-lg hover:bg-gray-700 transition duration-300 focus:outline-none faq-toggle">
+                            <span>Q7：安裝後會影響原廠保固嗎？</span>
+                            <i data-lucide="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content p-6 pt-0 text-gray-300 hidden">
+                            <p class="border-t border-gray-700 pt-4">本產品採取**無損安裝**，不破壞原車任何線路或電腦，僅是優化負極接地迴路。但每家車廠對改裝的定義不同，若您對保固有疑慮，建議諮詢您的原廠服務中心。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="text-center mt-16 pb-8 text-gray-500 text-sm border-t border-gray-700 pt-6">
+            <p>© 2025 <a href="https://jcjn.app/" class="text-gray-500 hover:text-accent">加乘激能</a>。電流優化解決方案。版權所有。</p>
+        </footer>
+
+    </div>
+
+    <a href="#" id="backToTopBtn" 
+       class="fixed bottom-6 right-6 p-4 rounded-full bg-accent-light text-[#1A1A22] 
+              shadow-xl shadow-[#39FF14]/50 hover:bg-white transition-all 
+              duration-300 transform hover:scale-105 hidden z-50" 
+       aria-label="回頁首">
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </a>
+    
+    <script>
+        // Lucide Icons 初始化
+        lucide.createIcons();
+
+        // FAQ 功能修改：允許同時展開多個項目
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+
+                // *** 移除自動關閉其他項目的邏輯，只切換當前點擊項目的狀態 ***
+                
+                // 切換點擊內容的隱藏/顯示狀態
+                content.classList.toggle('hidden');
+                // 切換箭頭圖標的旋轉狀態
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // 回到頁首按鈕邏輯
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        const scrollThreshold = 300; // 滾動超過 300px 顯示按鈕
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > scrollThreshold) {
+                backToTopBtn.classList.remove('hidden');
+            } else {
+                backToTopBtn.classList.add('hidden');
+            }
+        });
+    </script>
+    
+    <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+</body>
+</html>
